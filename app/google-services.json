@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146113290152",
+    "project_id": "home-of-scholars",
+    "storage_bucket": "home-of-scholars.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146113290152:android:113da3948588554ebe879d",
+        "android_client_info": {
+          "package_name": "com.example.homeofscholars"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146113290152-r8tuqbn5fuahb9r08tlicelelrc06g58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5FG72QMqReX0-l6m-2MMMrM_kzE4VeZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146113290152-r8tuqbn5fuahb9r08tlicelelrc06g58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
