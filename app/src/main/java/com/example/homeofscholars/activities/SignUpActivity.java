@@ -132,7 +132,7 @@ public class SignUpActivity extends AppCompatActivity {
         } else if (!binding.inputPassword.getText().toString().equals(binding.inputConfirmPassword.getText().toString())) {
             showToast("Enter name");
             return false;
-        } else { return false; }
+        } else { return true; }
     }
 
     private void loading(Boolean isLoading) {
