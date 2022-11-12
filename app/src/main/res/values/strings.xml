@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Scholar\'s Tower</string>
+    <string name="app_name">Home of Scholars</string>
     <string name="login_to_continue">Login to Continue</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="email">Email</string>
@@ -13,4 +13,5 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="sign_up">Sign Up</string>
     <string name="log_in">Log In</string>
+    <string name="select_user">Select User</string>
 </resources>
