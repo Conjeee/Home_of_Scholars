@@ -121,7 +121,7 @@ public class SignUpActivity extends AppCompatActivity {
             showToast("Enter email");
             return false;
         } else if (!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()) {
-            showToast("Enter valid image");
+            showToast("Enter valid email address");
             return false;
         } else if (binding.inputPassword.getText().toString().trim().isEmpty()) {
             showToast("Enter Password");
