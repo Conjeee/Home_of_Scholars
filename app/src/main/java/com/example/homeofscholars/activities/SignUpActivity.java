@@ -62,6 +62,7 @@ public class SignUpActivity extends AppCompatActivity {
         HashMap<String, Object> user = new HashMap<>();
         user.put(Constants.KEY_NAME, binding.inputName.getText().toString());
         user.put(Constants.KEY_EMAIL, binding.inputEmail.getText().toString());
+        user.put(Constants.KEY_DESCRIPTION, binding.inputDescription.getText().toString());
         user.put(Constants.KEY_PASSWORD, binding.inputPassword.getText().toString());
         user.put(Constants.KEY_IMAGE, encodedImage);
         database.collection(Constants.KEY_COLLECTION_USERS)
@@ -70,6 +71,7 @@ public class SignUpActivity extends AppCompatActivity {
                     preferenceManager.putBoolean(Constants.KEY_IS_SIGNED_IN, true);
                     preferenceManager.putString(Constants.KEY_USER_ID, documentReference.getId());
                     preferenceManager.putString(Constants.KEY_NAME, binding.inputName.getText().toString());
+                    preferenceManager.putString(Constants.KEY_DESCRIPTION, binding.inputDescription.getText().toString());
                     preferenceManager.putString(Constants.KEY_IMAGE, encodedImage);
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -116,6 +118,9 @@ public class SignUpActivity extends AppCompatActivity {
             return false;
         } else if (binding.inputName.getText().toString().trim().isEmpty()) {
             showToast("Enter name");
+            return false;
+        } else if (binding.inputDescription.getText().toString().trim().isEmpty()) {
+            showToast("Enter Description");
             return false;
         } else if (binding.inputEmail.getText().toString().trim().isEmpty()) {
             showToast("Enter email");

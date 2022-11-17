@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.homeofscholars.databinding.ActivitySiginInBinding;
+import com.example.homeofscholars.databinding.ActivitySignInBinding;
 import com.example.homeofscholars.utilities.Constants;
 import com.example.homeofscholars.utilities.PreferenceManager;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -16,14 +16,14 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 public class SignInActivity extends AppCompatActivity {
 
-    private ActivitySiginInBinding binding;
+    private ActivitySignInBinding binding;
     private PreferenceManager preferenceManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         preferenceManager = new PreferenceManager(getApplicationContext());
-        binding = ActivitySiginInBinding.inflate(getLayoutInflater());
+        binding = ActivitySignInBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setListeners();
     }
